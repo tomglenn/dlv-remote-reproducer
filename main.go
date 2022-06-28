@@ -6,7 +6,7 @@ import (
 	"github.com/heroiclabs/nakama-common/runtime"
 )
 func InitModule(ctx context.Context, logger runtime.Logger, db *sql.DB, nk runtime.NakamaModule, initializer runtime.Initializer) error {
-	logger.Debug("Hello world")
+	logger.Debug("==================GO SERVER RUNTIME CODE LOADED=================")
 	initializer.RegisterRpc("foo", RpcTest)
 	return nil
 }
